@@ -1,4 +1,4 @@
-button {
+.button {
   padding: 12px 20px;
   border: none;
   border-radius: 5px;
@@ -8,5 +8,15 @@ button {
 
   &:hover {
     background-color: var(--color-accent--dark);
+  }
+
+  &:focus-visible {
+    outline: none;
+    background-color: var(--color-accent--dark);
+  }
+
+  &:disabled {
+    background-color: var(--color-accent--disabled);
+    color: var(--color-text--disabled);
   }
 }

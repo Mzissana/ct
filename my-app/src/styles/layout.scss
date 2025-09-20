@@ -1,12 +1,13 @@
 :root {
   max-width: 2000px;
-  min-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0 1rem;
   color: var(--color-text);
+  background-color: var(--color-primary);
   font-weight: 400;
+  font-family: "Manrope", sans-serif;
 }
 
 .App {
@@ -35,6 +36,7 @@
   min-width: 100%;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   padding: 1.5rem;
 }
@@ -45,6 +47,20 @@
   justify-content: flex-end;
   align-items: center;
   gap: 20px;
+  text-wrap: nowrap;
+}
+
+.page__body {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.page__title {
+  padding: 1.5rem;
 }
 
 .dashboard {
@@ -83,4 +99,21 @@
 
 .patient-card__button {
   margin-left: auto;
+}
+
+.add-scan-page__form {
+  width: 100%;
+
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  gap: 20px;
+
+  &--active {
+    display: flex;
+  }
+
+  &--disabled {
+    display: none;
+  }
 }

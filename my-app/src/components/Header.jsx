@@ -1,5 +1,5 @@
 import React from "react";
-import PatientsSearch from "./PatientsSearch";
+import PatientsSearch from "./ui/PatientsSearch/PatientsSearch";
 import { useNavigate } from "react-router-dom";
 
 import MyButton from "./ui/MyButton/MyButton";
